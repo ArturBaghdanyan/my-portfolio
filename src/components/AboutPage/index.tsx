@@ -39,7 +39,7 @@ const AboutPage = () => {
           />
           <div className="flex flex-col">
             <b className="text-green-400 text-2xl">Hi There!</b>
-            <p className="text-2xl sm:text-3xl font-bold text-white italic">
+            <p className="text-lg sm:text-2xl font-bold text-white italic">
               I’m Arthur Baghdanyan
             </p>
           </div>

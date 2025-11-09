@@ -23,7 +23,7 @@ const Projects = () => {
         >
           Back to Home
         </Link>
-        <h1 className="text-white flex gap-x-3 text-3xl"><span className="text-green-300">{brackets}</span>{text}<span className="text-green-300">{brackets2}</span></h1>
+        <h1 className="text-white flex gap-x-3 text-xl sm:text-3xl"><span className="text-green-300">{brackets}</span>{text}<span className="text-green-300">{brackets2}</span></h1>
       </div>
 
       <AllProjects project={projects} />
