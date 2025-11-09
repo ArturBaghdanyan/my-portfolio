@@ -1,9 +1,8 @@
 import { useState, type FC, type RefObject } from "react";
+import Contact from "../Contact";
 import { AiFillCodepenCircle } from "react-icons/ai";
-import { IoMdMenu } from "react-icons/io";
 
 import style from "./style.module.css";
-import Contact from "../Contact";
 
 interface IProps {
   skillsRef: RefObject<HTMLDivElement | null>;
@@ -27,40 +26,8 @@ const Header: FC<IProps> = ({ skillsRef, projectsRef, contactRef }) => {
     <header
       className={`${style.header} w-full flex justify-center text-white relative h-[40px] justify-start mx-auto bg-[#194ea3] container-spacing`}
     >
-      <div className="w-full flex items-center justify-between container-spacing">
-        {/* <ul
-          className={`${style.header_container_nav} hidden uppercase cursor-pointer gap-3 no-underline md:flex lg:flex xl:flex`}
-        >
-          <li onClick={() => executeScroll(myRef)} className="relative grow">
-            Home
-          </li>
-          <li onClick={() => executeScroll(aboutRef)} className="relative grow">
-            About
-          </li>
-          <li
-            onClick={() => executeScroll(skillsRef)}
-            className="relative grow"
-          >
-            Skills
-          </li>
-          <li
-            onClick={() => executeScroll(projectsRef)}
-            className="relative grow"
-          >
-            Projects
-          </li>
-          <li
-            onClick={() => executeScroll(contactRef)}
-            className="relative grow"
-          >
-            Contact
-          </li>
-        </ul> */}
-
+      <div className="w-full flex items-center justify-between">
         <AiFillCodepenCircle className="animate-spin w-8 h-8" />
-        {/* <button className="flex w-8 h-8 cursor-pointer" onClick={clickItems}>
-          <IoMdMenu className="w-full h-auto text-black" />
-        </button> */}
         <Contact />
       </div>
 

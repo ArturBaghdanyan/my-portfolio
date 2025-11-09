@@ -58,3 +58,18 @@
     opacity: 1;
   }
 }
+.animateSlideX {
+  animation: slideFromLeft 1s ease-out infinite;
+}
+
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

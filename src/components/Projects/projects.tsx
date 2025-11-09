@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import AllProjects from "./allProjects";
 import { projectsData } from "../../data/projects-data";
 import type { IProject } from "../../types/project-type";
-import { Link } from "react-router-dom";
 
 const Projects = () => {
   const [projects, setProjects] = useState<IProject[]>([]);

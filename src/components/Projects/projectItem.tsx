@@ -7,8 +7,10 @@ interface ProjectProps {
 
 export const ProjectItem: React.FC<ProjectProps> = ({ data }) => {
   return (
-    <div className="w-full h-auto flex flex-col justify-between gap-y-4 p-3 mt-10 sm:text-lg xl:flex-row border border-white rounded-lg 
-           bg-[linear-gradient(to_top_right,#304bff,#00ff9f)]">
+    <div
+      className="w-full h-auto flex flex-col justify-between gap-y-4 p-3 mt-10 sm:text-lg xl:flex-row border border-white rounded-lg 
+           bg-[linear-gradient(to_top_right,#304bff,#00ff9f)]"
+    >
       {/* Card Container */}
 
       <div>

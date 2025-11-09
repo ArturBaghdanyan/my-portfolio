@@ -1,10 +1,10 @@
 import { type FC } from "react";
 
 import Card from "./card";
-
-import style from "./style.module.scss";
 import type { IProject } from "../../types/project-type";
 import { ProjectItem } from "./projectItem";
+
+import style from "./style.module.scss";
 
 type IProjectType = {
   project: IProject[];

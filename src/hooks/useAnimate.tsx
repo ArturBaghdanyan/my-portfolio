@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
 export const useScrollAnimation = () => {
-  // Allow ref.current to be null initially
   const ref = useRef<HTMLDivElement | null>(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -11,8 +10,9 @@ export const useScrollAnimation = () => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.disconnect(); // animate only once
+          setIsVisible(true); 
+        } else {
+          setIsVisible(false);
         }
       },
       { threshold: 0.1 }

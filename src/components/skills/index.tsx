@@ -1,19 +1,25 @@
 import { useState } from "react";
-
+import { useScrollAnimation } from "../../hooks/useAnimate";
 import { listSkills } from "../../data/skills";
-import Card from "../Projects/card";
 import type { Skill } from "../../types/skills";
+import Card from "../Projects/card";
 
 const MySkills = () => {
   const [skills] = useState<Skill[]>(listSkills);
+  const [containerRef, isVisible] = useScrollAnimation();
 
   return (
     <Card>
-      <h2 className="title w-1/5 px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition">
+      <h2 className="title w-3/5 sm:w-1/5 px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition">
         Skills
       </h2>
 
-      <div className="w-full md:w-3/5 h-auto m-auto flex flex-wrap gap-x-4 gap-y-6 mt-8 justify-center rounded-xl bg-gradient-to-br from-blue-200 via-blue-200 to-indigo-200 shadow-lg p-3">
+      <div
+        ref={containerRef}
+        className={`w-full md:w-3/5 h-auto m-auto flex flex-wrap gap-x-4 gap-y-6 mt-8 justify-center rounded-xl bg-gradient-to-br from-blue-200 via-blue-200 to-indigo-200 shadow-lg p-3 transition-all duration-700 ease-out ${
+          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+        }`}
+      >
         {skills.map((skill) => {
           const Icon = skill.imgSrc;
           return (

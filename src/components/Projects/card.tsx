@@ -31,7 +31,7 @@ const Card = ({ children, className }: CardProps) => {
   return (
     <div
       ref={ref}
-      className={`card ${className ?? ""}`} // ✅ include the passed className
+      className={`card ${className ?? ""}`}
       style={{
         opacity: visible ? 1 : 0,
         transform: visible ? "translateY(0)" : "translateY(60px)",

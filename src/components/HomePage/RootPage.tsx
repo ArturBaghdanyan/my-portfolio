@@ -1,12 +1,12 @@
 import { useRef } from "react";
 
-import WhoAmI from "../AboutPage";
 import Header from "../header/header";
+import WhoAmI from "../AboutPage";
 import ProjectsList from "../Projects/projectList";
 import MySkills from "../skills";
+import Article from "../Article";
 import Footer from "./Footer";
 import bgImage from "../../assets/bg.jpg";
-import Article from "../Article";
 
 const RootPage = () => {
   const projectsRef = useRef<HTMLDivElement | null>(null);
