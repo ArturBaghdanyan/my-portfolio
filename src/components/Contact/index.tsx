@@ -17,7 +17,7 @@ const Contact = () => {
   const phoneNumber = "+37477171773";
 
   return (
-    <div className="flex items-center justify-end my-4">
+    <div className="flex items-center justify-end">
       <div className="flex items-center gap-x-3">
         <div className="relative w-5 h-5 flex justify-center items-center group">
           <Link
