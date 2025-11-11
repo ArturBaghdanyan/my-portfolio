@@ -30,28 +30,42 @@ export const ProjectItem: React.FC<ProjectProps> = ({ data }) => {
         </h2>
         <p className="text-black mb-4">{data.description}</p>
 
-        {data.site && (
-          <p className="mt-4">
+        <div className="flex items-center gap-x-3">
+          {data.site && (
             <Link
               to={data.site}
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-500 hover:text-green-500"
             >
-              <b className="text-white">View Site</b>
+              <button
+                className="relative text-white cursor-pointer rounded-lg text-sm px-4 py-2 font-bold 
+                border-2 border-transparent bg-gradient-to-r from-green-400 to-blue-500 
+                bg-clip-padding transition-all duration-700 hover:from-blue-500 hover:to-green-400 
+                hover:shadow-lg hover:shadow-blue-300/50"
+              >
+                View Code
+              </button>
             </Link>
-          </p>
-        )}
-        {data.link && (
-          <Link
-            to={data.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-500 hover:text-green-500 text-red-500"
-          >
-            <b className="text-white">View Link</b> <br />
-          </Link>
-        )}
+          )}
+          {data.link && (
+            <Link
+              to={data.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:text-green-500 text-red-500"
+            >
+              <button
+                className="relative text-white cursor-pointer rounded-lg text-sm px-4 py-2 font-bold 
+                border-2 border-transparent bg-gradient-to-r from-green-400 to-blue-500 
+                bg-clip-padding transition-all duration-700 hover:from-blue-500 hover:to-green-400 
+                hover:shadow-lg hover:shadow-blue-300/50"
+              >
+                View Link
+              </button>
+            </Link>
+          )}
+        </div>
       </div>
     </div>
   );
