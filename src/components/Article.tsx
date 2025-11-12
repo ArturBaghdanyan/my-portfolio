@@ -10,8 +10,7 @@ const Article = () => {
         className="flex justify-center items-center h-full text-center text-sm sm:text-xl
       "
       >
-        Everything will be fine, and if not,
-        <br /> it's not the end of the world.
+        Everything will be fine, if it's not fine, then it's not the end.
       </div>
       <div className=" absolute right-6 top-25 md:top-15">
         <img src={quote} alt="quote" width="30px" height="30px" />
