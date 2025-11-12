@@ -8,22 +8,22 @@ interface ProjectProps {
 export const ProjectItem: React.FC<ProjectProps> = ({ data }) => {
   return (
     <div
-      className="w-full h-auto flex flex-col justify-between gap-y-4 p-3 mt-10 sm:text-lg xl:flex-row border border-white rounded-lg 
+      className="w-4/5 h-auto flex flex-col justify-between mx-auto gap-y-4 p-3 mt-10 sm:text-lg xl:flex-row border border-white rounded-lg 
            bg-[linear-gradient(to_top_right,#304bff,#00ff9f)]"
     >
       {/* Card Container */}
 
-      <div>
+      <div className="object-cover w-full h-full xl:mx-0 sm:mx-auto rounded transition-transform duration-[1500ms] group-hover:scale-105 
+             shadow-[0_10px_20px_rgba(255,92,92,0.6)] sm:w-4/5 xl:w-[500px]">
         <img
           src={data.image}
           alt="image"
-          className="object-cover w-[400px] h-[300px] mx-auto rounded transition-transform duration-[1500ms] group-hover:scale-105 
-             shadow-[0_10px_20px_rgba(255,92,92,0.6)] sm:w-[500px]"
+          className="object-cover w-full h-full"
         />
       </div>
 
       <div
-        className={`w-4/5 xl:w-2/5 mx-auto xl:mx-0 p-6 rounded-lg shadow-lg text-black bg-[#00a4a4]`}
+        className={`w-full sm:w-4/5 xl:w-2/5 mx-auto xl:mx-0 p-4 md:p-6 rounded-lg shadow-lg text-black bg-[#00a4a4]`}
       >
         <h2 className="text-2xl font-bold mb-4 text-center text-white">
           {data.title}
@@ -39,7 +39,7 @@ export const ProjectItem: React.FC<ProjectProps> = ({ data }) => {
               className="text-blue-500 hover:text-green-500"
             >
               <button
-                className="relative text-white cursor-pointer rounded-lg text-sm px-4 py-2 font-bold 
+                className="relative text-white cursor-pointer rounded-lg text-xs md:text-sm p-2 md:px-4 md:py-2 font-bold 
                 border-2 border-transparent bg-gradient-to-r from-green-400 to-blue-500 
                 bg-clip-padding transition-all duration-700 hover:from-blue-500 hover:to-green-400 
                 hover:shadow-lg hover:shadow-blue-300/50"
@@ -56,7 +56,7 @@ export const ProjectItem: React.FC<ProjectProps> = ({ data }) => {
               className="text-blue-500 hover:text-green-500 text-red-500"
             >
               <button
-                className="relative text-white cursor-pointer rounded-lg text-sm px-4 py-2 font-bold 
+                className="relative text-white cursor-pointer rounded-lg text-xs md:text-sm p-2 md:px-4 md:py-2 font-bold 
                 border-2 border-transparent bg-gradient-to-r from-green-400 to-blue-500 
                 bg-clip-padding transition-all duration-700 hover:from-blue-500 hover:to-green-400 
                 hover:shadow-lg hover:shadow-blue-300/50"

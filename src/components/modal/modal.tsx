@@ -39,10 +39,10 @@ const ExampleModal: React.FC = () => {
         isOpen={isOpen}
         onRequestClose={handleCloseModal}
         contentLabel="Welcome Modal"
-        className="relative bg-white rounded-lg py-6 px-4 max-w-md mx-auto mt-28 shadow-lg outline-none"
-        overlayClassName="fixed inset-0 bg-black/50 flex justify-center items-center"
+        className="relative bg-white rounded-lg py-6 px-4 max-w-md mx-auto shadow-lg outline-none"
+        overlayClassName="fixed inset-0 bg-black/50 flex justify-center items-center p-5"
       >
-        <h2 className="text-xl font-bold mb-4 text-center">Welcome my Page!</h2>
+        <h2 className="text-xl font-bold text-center mb-4">Welcome my Page!</h2>
         <p className="mb-4 text-center">
           Will you contact with me after watching at the my portfolio?
         </p>
