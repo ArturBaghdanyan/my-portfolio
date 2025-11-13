@@ -19,14 +19,18 @@ const ProjectsList = () => {
       >
         <Link
           to="/projects"
-          className="title px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 hover:scale-110 transition transform duration-300 ease-in-out"
+          className="title px-6 py-3 bg-white/10 text-white/90         font-semibold 
+            rounded-lg 
+            hover:text-white hover:bg-white/20 
+            transition-all duration-300"
         >
           View All Projects
         </Link>{" "}
       </div>
-      <div className="w-32 border-2 border-solid border-green-300 mx-auto rounded-xl text-center py-3 mt-12 text-white rounded-lg hover:bg-green-700 cursor-pointer bg-[linear-gradient(to_top,_#005959,_transparent)] shadow-[1px_1px_1px_1px_rgba(0,0,0,0.06)]">
-        Featured
-      </div>{" "}
+      <div className="relative w-32 mx-auto text-center py-3 mt-12 cursor-pointer rounded-xl shadow-[1px_1px_1px_1px_rgba(0,0,0,0.06)] bg-white/10 overflow-hidden">
+        <span className="absolute inset-0 bg-[linear-gradient(90deg,transparent,#00ffea,transparent)] opacity-0 hover:opacity-100 transition-opacity duration-[2000ms]"></span>
+        <span className="relative z-10 text-white font-bold text-xl">Featured</span>
+      </div>
       {projects.slice(0, 1).map((i) => (
         <Card key={i.id} className="mt-10 animate-fadeIn relative">
           <div className="relative group w-fit mx-auto">

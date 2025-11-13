@@ -23,7 +23,7 @@ const AboutPage = () => {
   }, []);
 
   return (
-    <div className="w-full h-[93.5%] m-auto flex flex-col justify-center md:flex-row items-center justify-between container-spacing overflow-hidden gap-8 bg-[linear-gradient(to_top_right,#304bff,transparent)]">
+    <div className="w-full h-[93.5%] m-auto flex flex-col justify-center md:flex-row items-center justify-between container-spacing overflow-hidden gap-8 bg-[linear-gradient(to_top_right,#304bff,transparent)] font-poppins">
       <div
         ref={textRef}
         className={`w-full md:w-[55%] flex flex-col gap-y-3 p-4
@@ -38,25 +38,25 @@ const AboutPage = () => {
             className={`${style.animateSlideX}`}
           />
           <div className="flex flex-col">
-            <b className="text-green-400 text-2xl">Hi There!</b>
-            <p className="text-lg sm:text-2xl font-bold text-white italic">
+            <b className="text-white font-bold text-2xl">Hi There!</b>
+            <p className="text-lg sm:text-2xl font-bold text-white font-mono">
               I’m Arthur Baghdanyan
             </p>
           </div>
         </div>
 
         <div>
-          <p className="text-black px-3 text-2xl rounded-lg">
+          <p className="font-mono text-black px-3 text-2xl rounded-lg">
             I’m a{" "}
-            <b className="font-extrabold text-white italic text-3xl">
-              Front-End Developer,{" "}
+            <b className="font-extrabold text-white text-2xl">
+              Front-End developer,{" "}
             </b>{" "}
             who turns ideas into smooth, interactive experiences that feel
             natural to use.
           </p>
         </div>
 
-        <p className="text-white text-sm pr-6 pl-3 font-roboto">
+        <p className="font-poppins text-white text-sm pr-6 pl-3 font-roboto">
           My goal is to create interfaces that leave a lasting impression,
           invite users to return, and keep every interaction smooth and
           functional.

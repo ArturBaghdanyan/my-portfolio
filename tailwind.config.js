@@ -22,6 +22,10 @@ export default {
         slideFromRight: "slideFromRight 1s ease-out forwards",
         animateSlideX: "slideX 1s ease-in-out infinite",
       },
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
+      },
     },
   },
   plugins: [],

@@ -7,7 +7,7 @@ const Article = () => {
         <img src={quote} alt="quote" width="30px" height="30px" />
       </div>
       <div
-        className="flex justify-center items-center h-full text-center text-sm sm:text-xl
+        className="flex justify-center items-center h-full text-center text-sm sm:text-xl font-mono
       "
       >
         Everything will be fine, if it's not fine, then it's not the end.

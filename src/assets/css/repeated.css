@@ -10,7 +10,7 @@
   margin-right: auto;
   text-transform: uppercase;
   overflow: hidden;
-  color: white;
+  color: #e0f7ff;
 }
 
 .title::before {
@@ -23,7 +23,7 @@
   background: linear-gradient(
     90deg,
     transparent,
-    rgb(11 227 39 / 95%),
+    #00ffea,
     transparent
   );
   animation: swipe 3s linear infinite;

@@ -10,7 +10,16 @@ const MySkills = () => {
 
   return (
     <Card>
-      <h2 className="title w-3/5 sm:w-1/5 px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition">
+      <h2
+        className="title 
+    w-3/5 sm:w-1/5 
+    px-6 py-3 
+    bg-white/10 backdrop-blur-sm 
+    text-white/90 font-semibold 
+    rounded-lg 
+    hover:text-white hover:bg-white/20 
+    transition-all duration-300"
+      >
         Skills
       </h2>
 
