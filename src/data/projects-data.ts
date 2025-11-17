@@ -1,15 +1,27 @@
 import reduxImage from "../assets/projects/redux-data.jpeg";
-import data from "../assets/projects/data.jpg"
-import smart from "../assets/projects/smart.jpeg"
-import propertyFraud from "../assets/projects/propertyFraud.png"
-import burger from "../assets/projects/burger.jpg"
-import registration from "../assets/projects/registration.jpg"
-import electronics from "../assets/projects/electronics.jpg"
-import logistics from "../assets/projects/logistics.jpg"
-import calculator from "../assets/projects/calculator.jpg"
-import personal from "../assets/projects/personal.jpg"
+import data from "../assets/projects/data.jpg";
+import smart from "../assets/projects/smart.jpeg";
+import propertyFraud from "../assets/projects/propertyFraud.png";
+import burger from "../assets/projects/burger.jpg";
+import registration from "../assets/projects/registration.jpg";
+import electronics from "../assets/projects/electronics.jpg";
+import logistics from "../assets/projects/logistics.jpg";
+import calculator from "../assets/projects/calculator.jpg";
+import personal from "../assets/projects/personal.jpg";
 
 export const projectsData = [
+  {
+    id: "Quizz",
+    key: "react",
+    image: reduxImage,
+    date: "26 Sep, 2025",
+    title: "Quizz App",
+    skill: "React, TypeScript, fake API",
+    description:
+      "A modern and interactive Quiz Application built with React.js and TypeScript. This app allows users to test their knowledge through multiple-choice questions, track their score, and get instant feedback on their answers — all with a clean and responsive UI.",
+    site: "https://smart-quizapp.netlify.app/",
+    link: "https://github.com/ArturBaghdanyan/Quizz-app",
+  },
   {
     id: "crudredux",
     key: "react",
@@ -19,7 +31,7 @@ export const projectsData = [
     skill: "React, TypeScript, Redux Toolkit Query",
     description:
       "A comprehensive web application architected with React, TypeScript, and Redux Toolkit Query (RTK Query), designed to empower users to efficiently manage teams and players through a robust, responsive interface with full CRUD operations via a RESTful API.",
-    site: "https://github.com/ArturBaghdanyan/TeamsOfPlayers_app"
+    link: "https://github.com/ArturBaghdanyan/TeamsOfPlayers_app",
   },
   {
     id: "data-vue",
@@ -33,6 +45,7 @@ export const projectsData = [
     site: "https://crudvuex.netlify.app",
     link: "https://github.com/ArturBaghdanyan/Crud_Vuex",
   },
+
   {
     id: "smart-shippings",
     key: "design",

@@ -43,7 +43,7 @@ export const ProjectItem: React.FC<ProjectProps> = ({ data }) => {
                 bg-clip-padding transition-all duration-700 hover:from-blue-500 hover:to-green-400 
                 hover:shadow-lg hover:shadow-blue-300/50"
               >
-                View Code
+                View Site
               </button>
             </Link>
           )}
@@ -60,7 +60,7 @@ export const ProjectItem: React.FC<ProjectProps> = ({ data }) => {
                 bg-clip-padding transition-all duration-700 hover:from-blue-500 hover:to-green-400 
                 hover:shadow-lg hover:shadow-blue-300/50"
               >
-                View Link
+                View Code
               </button>
             </Link>
           )}

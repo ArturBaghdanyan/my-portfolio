@@ -11,9 +11,9 @@ const Projects = () => {
     setProjects(projectsData);
   }, []);
 
-  let text = 'All Projects'
-  let brackets = '{'
-  let brackets2 = '}'
+  const text = 'All Projects'
+  const brackets = '{'
+  const brackets2 = '}'
   return (
     <div className="container-spacing">
       <div className="w-full flex justify-between items-center mt-8">

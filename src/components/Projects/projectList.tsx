@@ -41,7 +41,7 @@ const ProjectsList = () => {
             />
 
             <a
-              href={i.site}
+              href={i.link}
               target="_blank"
               rel="noopener noreferrer"
               className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
