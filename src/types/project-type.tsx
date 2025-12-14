@@ -6,6 +6,8 @@ export interface IProject {
   title: string;
   skill: string;
   description: string;
+  features?: string;
+  textList?: { text: string }[];
   link?: string;
   site?: string;
 }

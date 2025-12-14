@@ -19,6 +19,25 @@ export const projectsData = [
     skill: "React, TypeScript, fake API",
     description:
       "A modern and interactive Quiz Application built with React.js and TypeScript. This app allows users to test their knowledge through multiple-choice questions, track their score, and get instant feedback on their answers — all with a clean and responsive UI.",
+    features: "Key Features",
+    textList: [
+      {
+        text: "Dynamic multiple-choice questions with real-time score tracking",
+      },
+      {
+        text: "Instant answer validation with visual feedback",
+      },
+      {
+        text: "Fully typed components and data models using TypeScript",
+      },
+      {
+        text: "Reusable UI components and modular structure",
+      },
+
+      {
+        text: "Responsive design for mobile and desktop",
+      },
+    ],
     site: "https://smart-quizapp.netlify.app/",
     link: "https://github.com/ArturBaghdanyan/Quizz-app",
   },
@@ -28,24 +47,72 @@ export const projectsData = [
     image: reduxImage,
     date: "26 Aug, 2025",
     title: "Teams of Players",
-    skill: "React, TypeScript, Redux Toolkit Query",
+    skill: "React, TypeScript, Redux Toolkit Query (RTK Query)",
     description:
-      "A comprehensive web application architected with React, TypeScript, and Redux Toolkit Query (RTK Query), designed to empower users to efficiently manage teams and players through a robust, responsive interface with full CRUD operations via a RESTful API.",
+      "A CRUD-based web application built with React and TypeScript, utilizing Redux Toolkit Query for efficient server state management. The app enables users to manage teams and players through a responsive interface with full integration of RESTful API operations.",
+    features: "Key Features",
+    textList: [
+      {
+        text: "Full CRUD operations (Create, Read, Update, Delete) for teams and players",
+      },
+      {
+        text: "Server state management using Redux Toolkit Query (RTK Query)",
+      },
+      {
+        text: "RESTful API integration with automatic caching and data revalidation",
+      },
+      {
+        text: "Strongly typed components and API responses using TypeScript",
+      },
+      {
+        text: "Reusable and modular UI components with clean architecture",
+      },
+      {
+        text: "Loading and error handling states for improved user experience",
+      },
+      {
+        text: "Responsive design optimized for desktop and mobile devices",
+      },
+    ],
     link: "https://github.com/ArturBaghdanyan/TeamsOfPlayers_app",
   },
+
   {
     id: "data-vue",
     key: "vue",
     image: data,
     date: "26 Feb, 2025",
-    title: "Crud (Vue.js)",
+    title: "CRUD Application (Vue.js)",
     skill: "Vue.js, Vuex, REST API",
     description:
-      "A full-featured web application built using Vue.js and Vuex, allowing users to manage teams and players with seamless CRUD functionality via REST API. Implemented Vuex to manage global state efficiently, keeping UI and data in sync.",
+      "A CRUD-based web application built with Vue.js, utilizing Vuex for centralized state management and RESTful API integration. The application allows users to manage teams and players through a structured interface while maintaining predictable data flow and UI consistency.",
+    features: "Key Features",
+    textList: [
+      {
+        text: "Full CRUD operations (Create, Read, Update, Delete) for teams and players",
+      },
+      {
+        text: "Centralized global state management using Vuex",
+      },
+      {
+        text: "RESTful API integration with asynchronous data handling",
+      },
+      {
+        text: "Reusable Vue components with clean and scalable architecture",
+      },
+      {
+        text: "Form validation and user-friendly error handling",
+      },
+      {
+        text: "Reactive UI updates using Vue reactivity system",
+      },
+      {
+        text: "Responsive design for desktop and mobile devices",
+      },
+    ],
     site: "https://crudvuex.netlify.app",
     link: "https://github.com/ArturBaghdanyan/Crud_Vuex",
   },
-
   {
     id: "smart-shippings",
     key: "design",
@@ -55,6 +122,14 @@ export const projectsData = [
     skill: "HTML, CSS, Bootstrap, Swiper.js, JavaScript, jQuery",
     description:
       "Developed a modern and interactive web application using HTML, CSS, Bootstrap, Swiper.js, JavaScript, and jQuery. The project consists of multiple pages, all linked, ensuring smooth navigation between them.",
+    features: "Key Features",
+    textList: [
+      { text: "Multi-page website with structured navigation" },
+      { text: "Responsive layout built with Bootstrap grid system" },
+      { text: "Interactive sliders implemented using Swiper.js" },
+      { text: "DOM manipulation and UI interactions with jQuery" },
+      { text: "Cross-browser compatible and mobile-friendly design" },
+    ],
     site: "https://iridescent-puffpuff-812571.netlify.app/",
     link: "https://github.com/ArturBaghdanyan/Smart-Shippings",
   },
@@ -67,6 +142,15 @@ export const projectsData = [
     skill: "React, TypeScript, Tailwind CSS",
     description:
       "Collaborated with a team of developers to create a property-fraud application using React with TypeScript and Tailwind CSS.Implemented responsive design principles to ensure the application adapts seamlessly across various devices and screen sizes.",
+    features: "Key Features",
+    textList: [
+      { text: "Team-based development using React and TypeScript" },
+      { text: "Reusable UI components styled with Tailwind CSS" },
+      { text: "Responsive layouts for multiple screen sizes" },
+      { text: "Component-driven architecture and clean code practices" },
+      { text: "Collaboration using Git and version control workflows" },
+    ],
+
     link: "https://github.com/ArturBaghdanyan/property_fraud",
   },
   {
@@ -78,6 +162,17 @@ export const projectsData = [
     skill: "Next.js, TypeScript, CSS",
     description:
       "Created a dynamic and responsive web application built using Next.js, showcasing a collection of burgers with detailed descriptions.Utilized static generation (getStaticProps, getStaticPaths) for optimized performance and SEO.Integrated dynamic routing to display detailed information about each burger.",
+    features: "Key Features",
+    textList: [
+      {
+        text: "Static site generation using getStaticProps and getStaticPaths",
+      },
+      { text: "Dynamic routing for individual burger detail pages" },
+      { text: "Optimized performance and SEO with Next.js" },
+      { text: "Type-safe components using TypeScript" },
+      { text: "Responsive UI design for mobile and desktop" },
+    ],
+
     link: "https://github.com/ArturBaghdanyan/BurgerKing",
   },
   {
@@ -89,6 +184,15 @@ export const projectsData = [
     skill: "HTML, CSS, JavaScript, Bootstrap",
     description:
       "Created a dynamic and responsive registration form using HTML, CSS, JavaScript, and Bootstrap.Includes client-side validation using JavaScript to ensure data integrity and user feedback.",
+    features: "Key Features",
+    textList: [
+      { text: "Client-side form validation using JavaScript" },
+      { text: "Real-time user feedback for invalid input fields" },
+      { text: "Responsive form layout using Bootstrap" },
+      { text: "Reusable input components and clean markup structure" },
+      { text: "Improved user experience through accessible form design" },
+    ],
+
     site: "https://sparkling-marshmallow-cfe99a.netlify.app/",
     link: "https://github.com/ArturBaghdanyan/registration_task",
   },
@@ -101,6 +205,14 @@ export const projectsData = [
     skill: "React, TypeScript, CSS",
     description:
       "This React project implements a product listing page with the following key features.The FetchData component fetches product data from an API using useEffect and useCallback hooks.Users can filter products by category, brand, price range, rating, and a search term.",
+    features: "Key Features",
+    textList: [
+      { text: "API-based product data fetching" },
+      { text: "Advanced filtering by category, brand, price, and rating" },
+      { text: "Search functionality with real-time updates" },
+      { text: "Efficient state management using React hooks" },
+      { text: "Responsive product listing UI" },
+    ],
     link: "https://github.com/ArturBaghdanyan/skillex_task",
   },
   {
@@ -112,6 +224,15 @@ export const projectsData = [
     skill: "HTML, CSS, SCSS, JavaScript",
     description:
       "Collaborating closely with UI/UX designers, I've brought their vision to life by creating a responsive web design using HTML, CSS, SCSS, and JavaScript.Fully optimized for smaller screens, ensuring a seamless browsing experience across devices.",
+    features: "Key Features",
+    textList: [
+      { text: "Pixel-perfect implementation from UI/UX designs" },
+      { text: "Responsive layouts using CSS and SCSS" },
+      { text: "Cross-device compatibility and mobile optimization" },
+      { text: "Clean and maintainable stylesheet structure" },
+      { text: "Performance-optimized static website" },
+    ],
+
     link: "https://github.com/ArturBaghdanyan/garant_logistics",
   },
   {
