@@ -3,13 +3,34 @@ import data from "../assets/projects/data.jpg";
 import smart from "../assets/projects/smart.jpeg";
 import propertyFraud from "../assets/projects/propertyFraud.png";
 import burger from "../assets/projects/burger.jpg";
-import registration from "../assets/projects/registration.jpg";
 import electronics from "../assets/projects/electronics.jpg";
 import logistics from "../assets/projects/logistics.jpg";
-import calculator from "../assets/projects/calculator.jpg";
 import personal from "../assets/projects/personal.jpg";
+import JobBoard from "../assets/projects/JobBoard.png";
 
 export const projectsData = [
+  {
+    id: "job-board",
+    key: "react",
+    image: JobBoard,
+    date: "10 Jan, 2026",
+    title: "Job Board Platform",
+    skill: "React, TypeScript, Redux Toolkit, RTK Query, React Router",
+    description:
+      "A full-featured Job Board platform built with React and TypeScript. The application allows users to browse job listings, view detailed job descriptions, save jobs, and apply for positions. Authentication-based access ensures personalized user experience and secure data handling.",
+    features: "Key Features",
+    textList: [
+      { text: "Browse and search job listings with dynamic filtering" },
+      { text: "Job details pages with full descriptions and requirements" },
+      { text: "Save and apply to jobs with authenticated user access" },
+      { text: "State management using Redux Toolkit and RTK Query" },
+      { text: "Protected routes and auth guards with React Router" },
+      { text: "Reusable components and scalable project architecture" },
+      { text: "Responsive UI optimized for mobile and desktop" },
+    ],
+    site: "https://your-dream-jobs.netlify.app",
+    link: "https://github.com/ArturBaghdanyan/JobBoard",
+  },
   {
     id: "Quizz",
     key: "react",
@@ -42,41 +63,25 @@ export const projectsData = [
     link: "https://github.com/ArturBaghdanyan/Quizz-app",
   },
   {
-    id: "crudredux",
-    key: "react",
-    image: reduxImage,
-    date: "26 Aug, 2025",
-    title: "Teams of Players",
-    skill: "React, TypeScript, Redux Toolkit Query (RTK Query)",
+    id: "smart-shippings",
+    key: "design",
+    image: smart,
+    date: "24 Jan, 2024",
+    title: "Smart Shippings",
+    skill: "HTML, CSS, Bootstrap, Swiper.js, JavaScript, jQuery",
     description:
-      "A CRUD-based web application built with React and TypeScript, utilizing Redux Toolkit Query for efficient server state management. The app enables users to manage teams and players through a responsive interface with full integration of RESTful API operations.",
+      "Developed a modern and interactive web application using HTML, CSS, Bootstrap, Swiper.js, JavaScript, and jQuery. The project consists of multiple pages, all linked, ensuring smooth navigation between them.",
     features: "Key Features",
     textList: [
-      {
-        text: "Full CRUD operations (Create, Read, Update, Delete) for teams and players",
-      },
-      {
-        text: "Server state management using Redux Toolkit Query (RTK Query)",
-      },
-      {
-        text: "RESTful API integration with automatic caching and data revalidation",
-      },
-      {
-        text: "Strongly typed components and API responses using TypeScript",
-      },
-      {
-        text: "Reusable and modular UI components with clean architecture",
-      },
-      {
-        text: "Loading and error handling states for improved user experience",
-      },
-      {
-        text: "Responsive design optimized for desktop and mobile devices",
-      },
+      { text: "Multi-page website with structured navigation" },
+      { text: "Responsive layout built with Bootstrap grid system" },
+      { text: "Interactive sliders implemented using Swiper.js" },
+      { text: "DOM manipulation and UI interactions with jQuery" },
+      { text: "Cross-browser compatible and mobile-friendly design" },
     ],
-    link: "https://github.com/ArturBaghdanyan/TeamsOfPlayers_app",
+    site: "https://iridescent-puffpuff-812571.netlify.app/",
+    link: "https://github.com/ArturBaghdanyan/Smart-Shippings",
   },
-
   {
     id: "data-vue",
     key: "vue",
@@ -113,26 +118,7 @@ export const projectsData = [
     site: "https://crudvuex.netlify.app",
     link: "https://github.com/ArturBaghdanyan/Crud_Vuex",
   },
-  {
-    id: "smart-shippings",
-    key: "design",
-    image: smart,
-    date: "24 Jan, 2024",
-    title: "Smart Shippings",
-    skill: "HTML, CSS, Bootstrap, Swiper.js, JavaScript, jQuery",
-    description:
-      "Developed a modern and interactive web application using HTML, CSS, Bootstrap, Swiper.js, JavaScript, and jQuery. The project consists of multiple pages, all linked, ensuring smooth navigation between them.",
-    features: "Key Features",
-    textList: [
-      { text: "Multi-page website with structured navigation" },
-      { text: "Responsive layout built with Bootstrap grid system" },
-      { text: "Interactive sliders implemented using Swiper.js" },
-      { text: "DOM manipulation and UI interactions with jQuery" },
-      { text: "Cross-browser compatible and mobile-friendly design" },
-    ],
-    site: "https://iridescent-puffpuff-812571.netlify.app/",
-    link: "https://github.com/ArturBaghdanyan/Smart-Shippings",
-  },
+
   {
     id: "property-app",
     key: "react",
@@ -176,27 +162,6 @@ export const projectsData = [
     link: "https://github.com/ArturBaghdanyan/BurgerKing",
   },
   {
-    id: "registration-task",
-    key: "design",
-    image: registration,
-    date: "27 March, 2024",
-    title: "Registration task",
-    skill: "HTML, CSS, JavaScript, Bootstrap",
-    description:
-      "Created a dynamic and responsive registration form using HTML, CSS, JavaScript, and Bootstrap.Includes client-side validation using JavaScript to ensure data integrity and user feedback.",
-    features: "Key Features",
-    textList: [
-      { text: "Client-side form validation using JavaScript" },
-      { text: "Real-time user feedback for invalid input fields" },
-      { text: "Responsive form layout using Bootstrap" },
-      { text: "Reusable input components and clean markup structure" },
-      { text: "Improved user experience through accessible form design" },
-    ],
-
-    site: "https://sparkling-marshmallow-cfe99a.netlify.app/",
-    link: "https://github.com/ArturBaghdanyan/registration_task",
-  },
-  {
     id: "app-electronics",
     key: "react",
     image: electronics,
@@ -234,18 +199,6 @@ export const projectsData = [
     ],
 
     link: "https://github.com/ArturBaghdanyan/garant_logistics",
-  },
-  {
-    id: "calculator",
-    key: "JS",
-    image: calculator,
-    date: "25 Jan, 2025",
-    title: "Calculator",
-    skill: "HTML, CSS, JavaScript",
-    description:
-      "A fully functional calculator built using HTML, CSS, and JavaScript, designed with a clean and intuitive interface.Adapts to various screen sizes and devices.Provides a smooth and intuitive user experience",
-    site: "https://resonant-pastelito-bcd33d.netlify.app",
-    link: "https://github.com/ArturBaghdanyan/calculator",
   },
   {
     id: "personal",
