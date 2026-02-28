@@ -6,6 +6,7 @@ import {
   FaGithubSquare,
   FaVuejs,
   FaFigma,
+  FaNode,
 } from "react-icons/fa";
 import {
   SiTailwindcss,
@@ -13,9 +14,12 @@ import {
   SiTypescript,
   SiRedux,
   SiNextdotjs,
-  SiEslint,
-  SiPrettier,
+  SiExpress,
+  SiPostgresql,
+  SiNestjs, 
+  SiMongodb,
 } from "react-icons/si";
+
 import type { Skill } from "../types/skills";
 
 export const listSkills: Skill[] = [
@@ -29,8 +33,11 @@ export const listSkills: Skill[] = [
   { id: 8, imgSrc: SiRedux, text: "Redux" },
   { id: 9, imgSrc: SiNextdotjs, text: "Next JS" },
   { id: 10, imgSrc: FaVuejs, text: "Vue JS" },
-  { id: 11, imgSrc: FaGithubSquare, text: "Git" },
-  { id: 13, imgSrc: FaFigma, text: "Figma" },
-  { id: 14, imgSrc: SiEslint, text: "ESLint" },
-  { id: 15, imgSrc: SiPrettier, text: "Prettier" },
+  { id: 11, imgSrc: FaNode, text: "Node JS" },
+  { id: 12, imgSrc: SiExpress, text: "Express JS" },
+  { id: 13, imgSrc: SiNestjs, text: "Nest JS" },
+  { id: 14, imgSrc: SiPostgresql, text: "Postgres" },
+  { id: 15, imgSrc: SiMongodb, text: "MongoDB" },
+  { id: 16, imgSrc: FaGithubSquare, text: "Git" },
+  { id: 17, imgSrc: FaFigma, text: "Figma" },
 ];
