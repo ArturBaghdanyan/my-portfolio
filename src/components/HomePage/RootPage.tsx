@@ -14,17 +14,18 @@ const RootPage = () => {
   const skillsRef = useRef<HTMLDivElement | null>(null);
 
   const divStyle = {
-    backgroundImage: `url(${bgImage})`,
+    backgroundImage: `linear-gradient(to bottom, rgba(5, 10, 24, 0.4), rgba(5, 10, 24, 1)), url(${bgImage})`,
     width: "100%",
-    height: "600px",
+    height: "700px",
     backgroundAttachment: "fixed",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     backgroundSize: "cover",
+    display: "flex",
+    flexDirection: "column" as const,
   };
-
   return (
-    <div className="bg-[linear-gradient(to_top,#304bff,transparent)]">
+    <>
       <div style={divStyle}>
         <Header
           skillsRef={skillsRef}
@@ -46,7 +47,7 @@ const RootPage = () => {
         <Article />
       </main>
       <Footer />
-    </div>
+    </>
   );
 };
 

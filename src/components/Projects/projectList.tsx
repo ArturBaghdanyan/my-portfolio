@@ -27,10 +27,6 @@ const ProjectsList = () => {
           View All Projects
         </Link>{" "}
       </div>
-      <div className="relative w-32 mx-auto text-center py-3 mt-12 cursor-pointer rounded-xl shadow-[1px_1px_1px_1px_rgba(0,0,0,0.06)] bg-white/10 overflow-hidden">
-        <span className="absolute inset-0 bg-[linear-gradient(90deg,transparent,#00ffea,transparent)] opacity-0 hover:opacity-100 transition-opacity duration-[2000ms]"></span>
-        <span className="relative z-10 text-white font-bold text-xl">Featured</span>
-      </div>
       {projects.slice(0, 1).map((i) => (
         <Card key={i.id} className="mt-10 animate-fadeIn relative">
           <div className="relative group w-fit mx-auto">

@@ -1,8 +1,11 @@
-// tailwind.config.js
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
+      },
       keyframes: {
         slideFromLeft: {
           "0%": { transform: "translateX(-100%)", opacity: "0" },
@@ -20,11 +23,7 @@ export default {
       animation: {
         slideFromLeft: "slideFromLeft 1s ease-out forwards",
         slideFromRight: "slideFromRight 1s ease-out forwards",
-        animateSlideX: "slideX 1s ease-in-out infinite",
-      },
-      fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
-        montserrat: ["Montserrat", "sans-serif"],
+        animateSlideX: "animateSlideX 1s ease-in-out infinite", 
       },
     },
   },

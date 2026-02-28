@@ -23,7 +23,7 @@ const AboutPage = () => {
   }, []);
 
   return (
-    <div className="w-full h-[93.5%] m-auto flex flex-col justify-center md:flex-row items-center justify-between container-spacing overflow-hidden gap-8 bg-[linear-gradient(to_top_right,#304bff,transparent)] font-poppins">
+    <div className="w-full h-full m-auto flex flex-col justify-center md:flex-row items-center justify-between container-spacing overflow-hidden gap-8 bg-[linear-gradient(to_top_right,#304bff,transparent)] font-poppins">
       <div
         ref={textRef}
         className={`w-full md:w-[55%] flex flex-col gap-y-3 p-4
@@ -49,7 +49,7 @@ const AboutPage = () => {
           <p className="font-mono text-black px-3 text-2xl rounded-lg">
             I’m a{" "}
             <b className="font-extrabold text-white text-2xl">
-              Front-End developer,{" "}
+              Front-End/Full-Stack developer,{" "}
             </b>{" "}
             who turns ideas into smooth, interactive experiences that feel
             natural to use.

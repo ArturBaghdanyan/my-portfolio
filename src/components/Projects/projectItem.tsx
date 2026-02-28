@@ -1,88 +1,88 @@
 import { Link } from "react-router-dom";
-import type { IProject } from "../../types/project-type";
 import { useState } from "react";
+import type { IProject } from "../../types/project-type";
 
 interface ProjectProps {
   data: IProject;
 }
 
-export const ProjectItem: React.FC<ProjectProps> = ({ data }) => {
+export const ProjectItem = ({ data }: ProjectProps) => {
   const [showText, setShowText] = useState(false);
 
   return (
-    <div className="w-4/5 h-auto flex flex-col justify-between mx-auto gap-y-4 p-3 mt-10 sm:text-lg xl:flex-row">
+    <div className="w-4/5 h-auto flex flex-col justify-between mx-auto gap-y-6 p-3 mt-10 sm:text-lg xl:flex-row items-center my-8">
       <div
-        className="object-cover w-full h-full xl:mx-0 sm:mx-auto rounded transition-transform duration-[1500ms] group-hover:scale-105 
-             shadow-[0_10px_20px_rgba(255,92,92,0.6)] sm:w-4/5 xl:w-[500px] rounded-lg"
+        className="flex flex-col gap-y-3 w-full p-4 md:p-6 rounded-xl transition-all duration-300 border border-white/10 bg-transparent text-white"
+        style={{
+          boxShadow:
+            "0 20px 50px -12px rgba(0, 0, 0, 0.5), 0 0 15px rgba(255, 255, 255, 0.05)",
+        }}
       >
-        <img
-          src={data.image}
-          alt="image"
-          className="object-cover w-full h-full rounded-lg"
-        />
-      </div>
-
-      <div
-        className={`flex flex-col gap-y-3 w-full sm:w-4/5 xl:w-2/5 mx-auto xl:mx-0 p-4 md:p-6 rounded-lg shadow-lg text-black bg-white`}
-      >
-        <h2 className="text-2xl font-bold mb-4 text-center text-black">
+        <h2 className="text-2xl font-bold mb-2 text-center text-white">
           {data.title}
         </h2>
-        <p className="text-black m-0">{data.description}</p>
+
+        <p className="text-blue-50 m-0 leading-relaxed opacity-90">
+          {data.description}
+        </p>
+
         {data?.features && (
           <button
             onClick={() => setShowText((prev) => !prev)}
-            className="cursor-pointer text-red-500 font-bold mb-4 text-center w-full"
+            className="cursor-pointer text-red-400 font-bold my-2 text-center w-full hover:text-red-300 transition-colors flex items-center justify-center gap-2"
           >
-            {showText ? "less..." : "more..."}
+            {showText ? "View less" : "View features"}
+            <span
+              className={`transition-transform duration-300 ${showText ? "rotate-180" : ""}`}
+            >
+              ▼
+            </span>
           </button>
         )}
 
-        {showText && (
-          <ul
-            className={`list-disc list-inside mb-4 overflow-hidden transition-[max-height,opacity] duration-500 ease-in-out
-    ${showText ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"}
-  `}
-          >
-            <h2 className="font-bold">{`${data?.features}`}`</h2>
-            {data.textList?.map((item, index) => (
-              <li key={index} className="mb-2 text-black">
-                {item.text}
-              </li>
-            ))}
-          </ul>
-        )}
-        <div className="flex items-center gap-x-3">
+        <div
+          className={`overflow-hidden transition-all duration-500 ease-in-out ${
+            showText ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
+          }`}
+        >
+          <div className="border-t border-white/10 pt-4 mt-2">
+            <h3 className="font-bold mb-3 text-blue-200">{data.features}</h3>
+            <ul className="space-y-3 mb-4">
+              {data.textList?.map((item, index) => (
+                <li
+                  key={index}
+                  className="flex items-start gap-3 text-sm text-blue-50/80"
+                >
+                  <span className="flex-shrink-0 w-5 h-5 rounded-full bg-green-500/20 flex items-center justify-center text-green-400 text-[10px]">
+                    ✔
+                  </span>
+                  {item.text}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        <div className="flex items-center justify-center gap-x-4 mt-4">
           {data.site && (
             <Link
               to={data.site}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500 hover:text-green-500"
             >
-              <button
-                className="relative text-white cursor-pointer rounded-lg text-xs md:text-sm p-2 md:px-4 md:py-2 font-bold 
-                border-2 border-transparent bg-gradient-to-r from-green-400 to-blue-500 
-                bg-clip-padding transition-all duration-700 hover:from-blue-500 hover:to-green-400 
-                hover:shadow-lg hover:shadow-blue-300/50"
-              >
+              <button className="w-[200px] relative text-white cursor-pointer rounded-lg text-xs md:text-sm p-2 md:px-4 md:py-2 font-bold border border-white/20 bg-gradient-to-r from-green-400/80 to-blue-500/80 backdrop-blur-sm transition-all duration-700 hover:scale-[1.02] hover:shadow-lg hover:shadow-blue-500/40">
                 View Site
               </button>
             </Link>
           )}
+
           {data.link && (
             <Link
               to={data.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500 hover:text-green-500 text-red-500"
             >
-              <button
-                className="relative text-white cursor-pointer rounded-lg text-xs md:text-sm p-2 md:px-4 md:py-2 font-bold 
-                border-2 border-transparent bg-gradient-to-r from-green-400 to-blue-500 
-                bg-clip-padding transition-all duration-700 hover:from-blue-500 hover:to-green-400 
-                hover:shadow-lg hover:shadow-blue-300/50"
-              >
+              <button className="w-[200px] relative text-white cursor-pointer rounded-lg text-xs md:text-sm p-2 md:px-4 md:py-2 font-bold border border-white/20 bg-gradient-to-r from-blue-500/80 to-purple-500/80 backdrop-blur-sm transition-all duration-700 hover:scale-[1.02] hover:shadow-lg hover:shadow-purple-500/40">
                 View Code
               </button>
             </Link>
