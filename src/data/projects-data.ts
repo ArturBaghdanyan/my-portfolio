@@ -1,11 +1,3 @@
-import reduxImage from "../assets/projects/redux-data.jpeg";
-import data from "../assets/projects/data.jpg";
-import smart from "../assets/projects/smart.jpeg";
-import propertyFraud from "../assets/projects/propertyFraud.png";
-import burger from "../assets/projects/burger.jpg";
-import electronics from "../assets/projects/electronics.jpg";
-import logistics from "../assets/projects/logistics.jpg";
-import personal from "../assets/projects/personal.jpg";
 import JobBoard from "../assets/projects/JobBoard.png";
 
 export const projectsData = [
@@ -34,7 +26,6 @@ export const projectsData = [
   {
     id: "Quizz",
     key: "react",
-    image: reduxImage,
     date: "26 Sep, 2025",
     title: "Quizz App",
     skill: "React, TypeScript, fake API",
@@ -65,7 +56,6 @@ export const projectsData = [
   {
     id: "smart-shippings",
     key: "design",
-    image: smart,
     date: "24 Jan, 2024",
     title: "Smart Shippings",
     skill: "HTML, CSS, Bootstrap, Swiper.js, JavaScript, jQuery",
@@ -85,7 +75,6 @@ export const projectsData = [
   {
     id: "data-vue",
     key: "vue",
-    image: data,
     date: "26 Feb, 2025",
     title: "CRUD Application (Vue.js)",
     skill: "Vue.js, Vuex, REST API",
@@ -122,7 +111,6 @@ export const projectsData = [
   {
     id: "property-app",
     key: "react",
-    image: propertyFraud,
     date: "17 March, 2023",
     title: "Property",
     skill: "React, TypeScript, Tailwind CSS",
@@ -142,7 +130,6 @@ export const projectsData = [
   {
     id: "burger-king",
     key: "react",
-    image: burger,
     date: "30 Nov, 2024",
     title: "Burger King",
     skill: "Next.js, TypeScript, CSS",
@@ -164,7 +151,6 @@ export const projectsData = [
   {
     id: "app-electronics",
     key: "react",
-    image: electronics,
     date: "29 Oct, 2024",
     title: "App Electronics",
     skill: "React, TypeScript, CSS",
@@ -183,7 +169,6 @@ export const projectsData = [
   {
     id: "garant",
     key: "design",
-    image: logistics,
     date: "25 March, 2024",
     title: "Garant",
     skill: "HTML, CSS, SCSS, JavaScript",
@@ -199,16 +184,5 @@ export const projectsData = [
     ],
 
     link: "https://github.com/ArturBaghdanyan/garant_logistics",
-  },
-  {
-    id: "personal",
-    key: "design",
-    image: personal,
-    date: "13 Nov, 2024",
-    title: "Personal Website",
-    skill: "HTML, CSS, JavaScript",
-    description:
-      "Developed a fully responsive personal website from scratch using HTML, CSS, SCSS, and JavaScript, showcasing my portfolio, projects, and professional profile. Optimized for performance, accessibility, and responsiveness, ensuring the site is visually appealing and highly functional.",
-    link: "https://github.com/ArturBaghdanyan/personal_website",
   },
 ];
