@@ -19,7 +19,7 @@ const ProjectsList = () => {
       >
         <Link
           to="/projects"
-          className="title px-6 py-3 bg-white/10 text-white/90         font-semibold 
+          className="title px-6 py-3 bg-white/10 text-white/90 font-semibold 
             rounded-lg 
             hover:text-white hover:bg-white/20 
             transition-all duration-300"

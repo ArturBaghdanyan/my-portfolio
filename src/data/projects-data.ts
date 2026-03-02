@@ -1,4 +1,4 @@
-import JobBoard from "../assets/projects/JobBoard.png";
+import JobBoard from "../assets/JobBoard.png";
 
 export const projectsData = [
   {
@@ -22,6 +22,22 @@ export const projectsData = [
     ],
     site: "https://your-dream-jobs.netlify.app",
     link: "https://github.com/ArturBaghdanyan/JobBoard",
+  },
+  {
+    id: "authors",
+    key: "next",
+    date: "Dec, 2025",
+    title: "The authors with their books",
+    skill: "HTML, CSS, JavaScript, React JS, Node JS, Express JS, Postgres, REST API",
+    description: "A full-stack web application for managing authors and their books. Built with a React frontend, Node.js/Express REST API backend, and a PostgreSQL database — covering the complete development lifecycle from UI to data persistence.",
+    features: "Key Features",
+     textList: [
+      { text: "Browse and search authors alongside their published books" },
+      { text: "Full CRUD operations — create, read, update, and delete authors and books" },
+      { text: "RESTful API built with Express JS for clean, structured data communication" },
+      { text: "PostgreSQL database with relational data modeling between authors and books" },
+      { text: "Responsive UI built with React for a smooth experience on any device" },
+    ],
   },
   {
     id: "Quizz",
@@ -106,65 +122,6 @@ export const projectsData = [
     ],
     site: "https://crudvuex.netlify.app",
     link: "https://github.com/ArturBaghdanyan/Crud_Vuex",
-  },
-
-  {
-    id: "property-app",
-    key: "react",
-    date: "17 March, 2023",
-    title: "Property",
-    skill: "React, TypeScript, Tailwind CSS",
-    description:
-      "Collaborated with a team of developers to create a property-fraud application using React with TypeScript and Tailwind CSS.Implemented responsive design principles to ensure the application adapts seamlessly across various devices and screen sizes.",
-    features: "Key Features",
-    textList: [
-      { text: "Team-based development using React and TypeScript" },
-      { text: "Reusable UI components styled with Tailwind CSS" },
-      { text: "Responsive layouts for multiple screen sizes" },
-      { text: "Component-driven architecture and clean code practices" },
-      { text: "Collaboration using Git and version control workflows" },
-    ],
-
-    link: "https://github.com/ArturBaghdanyan/property_fraud",
-  },
-  {
-    id: "burger-king",
-    key: "react",
-    date: "30 Nov, 2024",
-    title: "Burger King",
-    skill: "Next.js, TypeScript, CSS",
-    description:
-      "Created a dynamic and responsive web application built using Next.js, showcasing a collection of burgers with detailed descriptions.Utilized static generation (getStaticProps, getStaticPaths) for optimized performance and SEO.Integrated dynamic routing to display detailed information about each burger.",
-    features: "Key Features",
-    textList: [
-      {
-        text: "Static site generation using getStaticProps and getStaticPaths",
-      },
-      { text: "Dynamic routing for individual burger detail pages" },
-      { text: "Optimized performance and SEO with Next.js" },
-      { text: "Type-safe components using TypeScript" },
-      { text: "Responsive UI design for mobile and desktop" },
-    ],
-
-    link: "https://github.com/ArturBaghdanyan/BurgerKing",
-  },
-  {
-    id: "app-electronics",
-    key: "react",
-    date: "29 Oct, 2024",
-    title: "App Electronics",
-    skill: "React, TypeScript, CSS",
-    description:
-      "This React project implements a product listing page with the following key features.The FetchData component fetches product data from an API using useEffect and useCallback hooks.Users can filter products by category, brand, price range, rating, and a search term.",
-    features: "Key Features",
-    textList: [
-      { text: "API-based product data fetching" },
-      { text: "Advanced filtering by category, brand, price, and rating" },
-      { text: "Search functionality with real-time updates" },
-      { text: "Efficient state management using React hooks" },
-      { text: "Responsive product listing UI" },
-    ],
-    link: "https://github.com/ArturBaghdanyan/skillex_task",
   },
   {
     id: "garant",

@@ -19,11 +19,11 @@ const Projects = () => {
       <div className="w-full flex justify-between items-center mt-8">
         <Link
           to="/"
-          className="px-6 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-800 transition"
+          className="px-3 py-2 bg-gray-700 text-white text-sm md:text-md rounded-lg hover:bg-gray-800 transition"
         >
           Back to Home
         </Link>
-        <h1 className="text-white flex gap-x-3 text-xl sm:text-3xl"><span className="text-green-300">{brackets}</span>{text}<span className="text-green-300">{brackets2}</span></h1>
+        <h1 className="text-white flex gap-x-3 text-md sm:text-2xl"><span className="text-green-300">{brackets}</span>{text}<span className="text-green-300">{brackets2}</span></h1>
       </div>
 
       <AllProjects project={projects} />

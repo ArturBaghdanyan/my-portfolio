@@ -15,7 +15,7 @@ const ExampleModal: React.FC = () => {
 
   const handleOpenModal = () => setIsOpen(true);
   const handleCloseModal = () => setIsOpen(false);
-  
+
   const handleNoHover = () => {
     const maxTop = 50;
     const maxLeft = 180;
@@ -44,7 +44,7 @@ const ExampleModal: React.FC = () => {
       >
         <h2 className="text-xl font-bold text-center mb-4">Welcome my Page!</h2>
         <p className="mb-4 text-center">
-          Will you contact with me after watching at the my portfolio?
+          Will you get in touch with me after viewing my portfolio?{" "}
         </p>
         <div className="w-full flex items-center justify-center gap-x-3">
           <button
