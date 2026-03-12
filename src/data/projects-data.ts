@@ -38,6 +38,7 @@ export const projectsData = [
       { text: "PostgreSQL database with relational data modeling between authors and books" },
       { text: "Responsive UI built with React for a smooth experience on any device" },
     ],
+     link: "https://github.com/ArturBaghdanyan/AuthorsWithBooks_app",
   },
   {
     id: "Quizz",
