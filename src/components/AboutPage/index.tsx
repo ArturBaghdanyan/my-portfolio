@@ -1,87 +1,87 @@
-import { useState, useEffect, useRef } from "react";
-import programmer from "../../assets/programmer.png";
+import { useRef } from "react";
+
+import Contact from "../Contact";
 import hi from "../../assets/hi.png";
+import { AiFillCodepenCircle } from "react-icons/ai";
 
 import style from "./style.module.scss";
 
-const AboutPage = () => {
-  const imgRef = useRef<HTMLDivElement | null>(null);
+interface AboutPageProps {
+  onSkillsClick: () => void;
+  onExperienceClick: () => void;
+  onProjectsClick: () => void;
+}
+
+const AboutPage = ({
+  onSkillsClick,
+  onExperienceClick,
+  onProjectsClick,
+}: AboutPageProps) => {
   const textRef = useRef<HTMLDivElement | null>(null);
-  const [scrollTriggered, setScrollTriggered] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 300) {
-        setScrollTriggered(true);
-      } else {
-        setScrollTriggered(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   return (
-    <div className="w-full h-full m-auto flex flex-col justify-center md:flex-row items-center justify-between container-spacing overflow-hidden gap-8 bg-[linear-gradient(to_top_right,#304bff,transparent)] font-poppins">
+    <>
+      <div className="absolute top-2 left-0">
+        <AiFillCodepenCircle className="animate-spin w-8 h-8 text-green-500" />
+      </div>
+
       <div
         ref={textRef}
-        className={`w-full md:w-[55%] flex flex-col gap-y-3 p-4
- ${scrollTriggered ? style.animateFromBottomLeft : style.animateFromLeft}`}
+        className="flex flex-col gap-y-3 py-24 top-[20%] w-[80%] lg:w-[40%] lg:flex lg:max-h-screen lg:flex-col lg:justify-between lg:sticky"
       >
-        <div className="flex items-center gap-x-5 gap-y-0 w-full md:mx-0 md:text-lg px-2">
-          <img
-            src={hi}
-            alt="hi"
-            width={30}
-            height={30}
-            className={`${style.animateSlideX}`}
-          />
-          <div className="flex flex-col">
-            <b className="text-white font-bold text-2xl">Hi There!</b>
-            <p className="text-lg sm:text-2xl font-bold text-white font-mono">
-              I’m Arthur Baghdanyan
+        <div className="flex flex-col gap-y-3 h-full">
+          <div className="flex items-center gap-x-1 gap-y-0 w-full md:mx-0 md:text-lg">
+            <img
+              src={hi}
+              alt="hi"
+              width={30}
+              height={30}
+              className={`${style.animateSlideX}`}
+            />
+            <p className="pl-5 text-xl sm:text-4xl md:text-3xl font-bold text-white font-mono">
+              Arthur Baghdanyan
             </p>
           </div>
-        </div>
 
-        <div>
-          <p className="font-mono text-black px-3 text-2xl rounded-lg">
-            I’m a{" "}
-            <b className="font-extrabold text-white text-2xl">
-              Front-End/Full-Stack developer,{" "}
-            </b>{" "}
-            who turns ideas into smooth, interactive experiences that feel
-            natural to use.
-          </p>
-        </div>
+          <div className="flex flex-col gap-y-3 pl-5 text-[#d5d5d5]">
+            <p className="font-mono text-sm rounded-lg">
+              <b>Front-End | Full-Stack Software Engineer</b>
+            </p>
+            <span className="w-2/3">
+              I build web applications from pixel to server clean interfaces.
+            </span>
+          </div>
 
-        <p className="font-poppins text-white text-sm pr-6 pl-3 font-roboto">
-          My goal is to create interfaces that leave a lasting impression,
-          invite users to return, and keep every interaction smooth and
-          functional.
-        </p>
+          <div className="hidden gap-y-6 mt-[70px] lg:flex lg:flex-col lg:gap-y-3 pl-5 text-[#d5d5d5]">
+            <div
+              onClick={onSkillsClick}
+              className="flex items-center gap-x-6 text-white cursor-pointer hover:text-green-400 transition-colors"
+            >
+              <div className="w-12 h-2 border-t-1 mt-3"></div>
+              <span className="uppercase">Skills</span>
+              <div className="w-12 h-2 border-t-1 mt-3"></div>
+            </div>
+            <div
+              onClick={onExperienceClick}
+              className="flex items-center gap-x-6 text-white cursor-pointer hover:text-green-400 transition-colors"
+            >
+              <div className="w-12 h-2 border-t-1 mt-3"></div>
+              <span className="uppercase">Experience</span>
+              <div className="w-12 h-2 border-t-1 mt-3"></div>
+            </div>
+            <div
+              onClick={onProjectsClick}
+              className="flex items-center gap-x-6 text-white cursor-pointer hover:text-green-400 transition-colors"
+            >
+              <div className="w-12 h-2 border-t-1 mt-3"></div>
+              <span className="uppercase">Projects</span>
+              <div className="w-12 h-2 border-t-1 mt-3"></div>
+            </div>
+          </div>
+        </div>
+        <Contact />
       </div>
-      <div
-        ref={imgRef}
-        className={`w-full md:w-[45%] flex justify-center ${
-          scrollTriggered
-            ? style.animateFromBottomRight
-            : style.animateFromRight
-        }`}
-      >
-        <img
-          src={programmer}
-          alt="programmer"
-          className="w-[300px] h-[120px] sm:w-[180px] sm:h-[180px] md:w-[250px] md:h-[250px]
-            object-contain
-            transition-transform duration-300
-            scale-[1.5]
-            sm:scale-[1]
-            hover:scale-110"
-        />
-      </div>
-    </div>
+    </>
   );
 };
 

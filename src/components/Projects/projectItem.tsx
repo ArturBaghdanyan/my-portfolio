@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { useState } from "react";
 import type { IProject } from "../../types/project-type";
 
@@ -10,7 +10,7 @@ export const ProjectItem = ({ data }: ProjectProps) => {
   const [showText, setShowText] = useState(false);
 
   return (
-    <div className="w-4/5 h-auto flex flex-col justify-between mx-auto gap-y-6  sm:text-lg xl:flex-row items-center my-4">
+    <div className="w-full h-auto flex flex-col justify-between gap-y-6  sm:text-lg xl:flex-row items-center my-4">
       <div
         className="flex flex-col gap-y-3 w-full p-4 md:p-6 rounded-xl transition-all duration-300 border border-white/10 bg-transparent text-white"
         style={{
@@ -65,27 +65,27 @@ export const ProjectItem = ({ data }: ProjectProps) => {
 
         <div className="flex items-center justify-center gap-x-4 mt-4">
           {data.site && (
-            <Link
-              to={data.site}
+            <a
+              href={data.site}
               target="_blank"
               rel="noopener noreferrer"
             >
               <button className="w-[80px] md:w-[200px] relative text-white cursor-pointer rounded-lg text-xs md:text-sm p-2 md:px-4 md:py-2 font-bold border border-white/20 bg-gradient-to-r from-green-400/80 to-blue-500/80 backdrop-blur-sm transition-all duration-700 hover:scale-[1.02] hover:shadow-lg hover:shadow-blue-500/40">
                 View Site
               </button>
-            </Link>
+            </a>
           )}
 
           {data.link && (
-            <Link
-              to={data.link}
+            <a
+              href={data.link}
               target="_blank"
               rel="noopener noreferrer"
             >
               <button className="w-[80px] md:w-[200px] relative text-white cursor-pointer rounded-lg text-xs md:text-sm p-2 md:px-4 md:py-2 font-bold border border-white/20 bg-gradient-to-r from-blue-500/80 to-purple-500/80 backdrop-blur-sm transition-all duration-700 hover:scale-[1.02] hover:shadow-lg hover:shadow-purple-500/40">
                 View Code
               </button>
-            </Link>
+            </a>
           )}
         </div>
       </div>

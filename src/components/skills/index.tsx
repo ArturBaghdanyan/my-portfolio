@@ -25,7 +25,7 @@ const MySkills = () => {
 
       <div
         ref={containerRef}
-        className={`w-full md:w-3/5 h-auto m-auto flex flex-wrap gap-x-4 gap-y-6 mt-8 justify-center rounded-xl bg-gradient-to-br from-blue-200 via-blue-200 to-indigo-200 shadow-lg p-3 transition-all duration-700 ease-out ${
+        className={`w-full h-auto flex flex-wrap gap-x-4 gap-y-6 mt-8 justify-center rounded-xl bg-gradient-to-br from-blue-200 via-blue-200 to-indigo-200 shadow-lg p-3 transition-all duration-700 ease-out ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
       >
