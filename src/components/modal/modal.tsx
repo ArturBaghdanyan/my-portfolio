@@ -42,8 +42,8 @@ const ExampleModal: React.FC = () => {
         className="relative bg-white rounded-lg py-6 px-4 max-w-md mx-auto shadow-lg outline-none"
         overlayClassName="fixed inset-0 bg-black/50 flex justify-center items-center p-5"
       >
-        <h2 className="text-xl font-bold text-center mb-4">Welcome my Page!</h2>
-        <p className="mb-4 text-center">
+        <h2 className="text-xl font-bold text-center mb-4 font-montserrat">Welcome my Page!</h2>
+        <p className="mb-4 px-10 text-center capitalize font-montserrat">
           Will you get in touch with me after viewing my portfolio?{" "}
         </p>
         <div className="w-full flex items-center justify-center gap-x-3">

@@ -1,10 +1,9 @@
 import { useRef } from "react";
 
 import Contact from "../Contact";
-import hi from "../../assets/hi.png";
-import { AiFillCodepenCircle } from "react-icons/ai";
+// import hi from "../../assets/hi.png";
 
-import style from "./style.module.scss";
+// import style from "./style.module.scss";
 
 interface AboutPageProps {
   onSkillsClick: () => void;
@@ -21,30 +20,26 @@ const AboutPage = ({
 
   return (
     <>
-      <div className="absolute top-2 left-0">
-        <AiFillCodepenCircle className="animate-spin w-8 h-8 text-green-500" />
-      </div>
-
       <div
         ref={textRef}
-        className="flex flex-col gap-y-3 py-24 top-[20%] w-[80%] lg:w-[40%] lg:flex lg:max-h-screen lg:flex-col lg:justify-between lg:sticky"
+        className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[48%] lg:flex-col lg:justify-between lg:py-24"
       >
         <div className="flex flex-col gap-y-3 h-full">
           <div className="flex items-center gap-x-1 gap-y-0 w-full md:mx-0 md:text-lg">
-            <img
+            {/* <img
               src={hi}
               alt="hi"
               width={30}
               height={30}
               className={`${style.animateSlideX}`}
-            />
-            <p className="pl-5 text-xl sm:text-4xl md:text-3xl font-bold text-white font-mono">
+            /> */}
+            <p className="pl-5 text-xl sm:text-4xl md:text-3xl font-bold text-white font-montserrat">
               Arthur Baghdanyan
             </p>
           </div>
 
           <div className="flex flex-col gap-y-3 pl-5 text-[#d5d5d5]">
-            <p className="font-mono text-sm rounded-lg">
+            <p className="font-montserrat text-sm rounded-lg">
               <b>Front-End | Full-Stack Software Engineer</b>
             </p>
             <span className="w-2/3">

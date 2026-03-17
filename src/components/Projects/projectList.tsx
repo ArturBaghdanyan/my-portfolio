@@ -3,13 +3,15 @@ import { projectsData } from "../../data/projects-data";
 import type { IProject } from "../../types/project-type";
 import Card from "./card";
 
+import "./style.css"
+
 const ProjectsList = () => {
   const [projects] = useState<IProject[]>(projectsData);
 
   return (
     <>
       {projects.slice(0, 1).map((i) => (
-        <Card key={i.id} className="mt-10 animate-fadeIn relative">
+        <Card key={i.id} className="mt-10 relative animate-fadeIn">
           <div className="relative group w-fit mx-auto">
             <img
               src={i.image}

@@ -1,10 +1,10 @@
-import { useRef } from "react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { MainPage } from "../Main/Page";
 import AboutPage from "../AboutPage";
 
 import { projectsData } from "../../data/projects-data";
 import type { IProject } from "../../types/project-type";
+import { AiFillCodepenCircle } from "react-icons/ai";
 
 const RootPage = () => {
   const [projects, setProjects] = useState<IProject[]>([]);
@@ -23,6 +23,9 @@ const RootPage = () => {
 
   return (
     <div className="lg:flex lg:justify-between lg:gap-4 container-spacing">
+      <div className="fixed top-2 left-0">
+        <AiFillCodepenCircle className="animate-spin w-8 h-8 text-green-500" />
+      </div>
       <AboutPage
         onSkillsClick={() => scrollTo(skillsSectionRef)}
         onExperienceClick={() => scrollTo(experienceSectionRef)}
