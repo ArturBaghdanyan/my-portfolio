@@ -10,6 +10,7 @@ const MyExperience = () => {
     "Javascript",
     "Typescript",
     "React JS",
+    "React-Query",
     "Redux",
     "Vue.js",
     "Vue.js/Vuex",
@@ -18,7 +19,6 @@ const MyExperience = () => {
     "Socket.io",
     "PostgreSQL",
     "JWT",
-    "RBAC",
     "API",
   ];
 

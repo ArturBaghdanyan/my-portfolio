@@ -4,8 +4,9 @@ export const experienceData = [
     jobTitle: "Full Stack developer",
     company: "Freelance (contract)",
     description: [
-      "Architected a high-concurrency Educational Ecosystem and real-time Chess platform using Next.js 15 and Socket.io, implementing multi-tenant architectures and bi-directional synchronization for live game analysis and curriculum management.",
-      "Engineered robust Full-Stack backends with Node.js and PostgreSQL, utilizing JWT authentication, RBAC, and complex relational modeling to manage many-to-many relationships between users, internship milestones, and secure API endpoints.",
+      "Architected a high-concurrency Educational Ecosystem and real-time Chess platform leveraging React JS, TypeScript, and Socket.io. Engineered a multi-tenant architecture with bi-directional synchronization to power live game analysis and dynamic curriculum management. Streamlined data synchronization by integrating React-Query for asynchronous server-state management, implementing intelligent caching and optimistic updates to ensure a seamless, lag-free user experience during high-traffic sessions.",
+
+      "Developed a high-concurrency educational ecosystem, Next.js 15 with powerful Full-Stack backends with Node.js and PostgreSQL, using JWT authentication, to manage the many-to-many relationships between users and practice phases, and secure API endpoints.",
     ],
   },
   {
