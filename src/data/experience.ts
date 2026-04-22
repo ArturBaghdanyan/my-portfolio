@@ -2,14 +2,14 @@ export const experienceData = [
   {
     dateRange: "2026-02 - present",
     jobTitle: "Full Stack developer",
-    company: "CodeForge (startup)",
+    company: "Freelance (contract)",
     description: [
-      "Architected and developed a high-performance web application using Next.js for a seamless, SEO-optimized frontend.",
-      "Built a robust, modular backend with Express js.",
+      "Architected a high-concurrency Educational Ecosystem and real-time Chess platform using Next.js 15 and Socket.io, implementing multi-tenant architectures and bi-directional synchronization for live game analysis and curriculum management.",
+      "Engineered robust Full-Stack backends with Node.js and PostgreSQL, utilizing JWT authentication, RBAC, and complex relational modeling to manage many-to-many relationships between users, internship milestones, and secure API endpoints.",
     ],
   },
   {
-    dateRange: "2025-01 - present",
+    dateRange: "2025-01 - 2026-02",
     jobTitle: "Front End Trainer",
     company: "Manukyan It school",
     description: [
@@ -30,21 +30,12 @@ export const experienceData = [
     ],
   },
   {
-    dateRange: "2024-01 - 2024-11",
+    dateRange: "2023-10 - 2024-11",
     jobTitle: "Front End developer",
     company: "Circus Codes",
     description: [
       "Solved the productivity problem for a CRM team by building a fully functional To-do list module — users could create, assign, update, and delete tasks without leaving the platform, reducing context switching between tools.",
       "Managed server-state complexity across the CRM using RTK Query implemented tag-based cache invalidation so that mutations (create/read/update/delete) automatically triggered UI refreshes without manual re-fetching logic.",
-    ],
-  },
-  {
-    dateRange: "2023-06 - 2024-01",
-    jobTitle: "Front End developer",
-    company: "IU Networks llc",
-    description: [
-      "Solved a document generation problem — built dynamic, print ready PDF templates using HTML, CSS, and JavaScript that rendered consistently across browsers and PDF export engines, eliminating formatting breaks in client-facing documents.",
-      "Tackled complex typography and multi-column layout challenges with pure CSS, producing pixel-accurate documents that matched design specifications without relying on external libraries.",
     ],
   },
 ];

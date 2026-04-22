@@ -3,6 +3,47 @@ import { experienceData } from "../../data/experience";
 
 const MyExperience = () => {
   const [list] = useState(experienceData);
+  const toolsToHighlight = [
+    "HTML",
+    "Css",
+    "Scss",
+    "Javascript",
+    "Typescript",
+    "React JS",
+    "Redux",
+    "Vue.js",
+    "Vue.js/Vuex",
+    "RTK Query",
+    "Next.js 15",
+    "Socket.io",
+    "PostgreSQL",
+    "JWT",
+    "RBAC",
+    "API",
+  ];
+
+  const formatDescription = (text: string) => {
+    if (!text) return text;
+
+    // Create a regex pattern from the tools array
+    const pattern = new RegExp(`(${toolsToHighlight.join("|")})`, "gi");
+    const parts = text.split(pattern);
+
+    return parts.map((part, index) =>
+      toolsToHighlight.some(
+        (tool) => tool.toLowerCase() === part.toLowerCase(),
+      ) ? (
+        <span
+          key={index}
+          className="mx-1 px-1.5 py-0.5 text-xs font-medium border border-orange-400/40 bg-orange-400/10 text-orange-300 rounded-md"
+        >
+          {part}
+        </span>
+      ) : (
+        part
+      ),
+    );
+  };
 
   return (
     <div className="flex flex-col gap-y-10 font-montserrat">
@@ -30,9 +71,11 @@ const MyExperience = () => {
               <h2 className="text-orange-400 font-bold">{item.jobTitle}</h2>
               <span className="mb-3">{item.company}</span>
             </div>
-            <div className="mt-3">
-              {item.description.map((i, index) => (
-                <p key={index}>{i}</p>
+            <div className="mt-4 space-y-3 leading-relaxed">
+              {item.description.map((desc, idx) => (
+                <p key={idx} className="text-sm">
+                  {formatDescription(desc)}
+                </p>
               ))}
             </div>
           </div>
