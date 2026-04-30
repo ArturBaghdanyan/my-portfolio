@@ -20,7 +20,7 @@ export const projectsData = [
       { text: "Reusable components and scalable project architecture" },
       { text: "Responsive UI optimized for mobile and desktop" },
     ],
-    site: "https://your-dream-jobs.netlify.app",
+    site: "https://your-dream-job.netlify.app",
     link: "https://github.com/ArturBaghdanyan/JobBoard",
   },
   {
@@ -43,11 +43,11 @@ export const projectsData = [
   {
     id: "Quizz",
     key: "react",
-    date: "26 Sep, 2025",
+    date: "30 Apr, 2026",
     title: "Quizz App",
-    skill: "React, TypeScript, fake API",
+    skill: "Next.js, TypeScript, fake API",
     description:
-      "A modern and interactive Quiz Application built with React.js and TypeScript. This app allows users to test their knowledge through multiple-choice questions, track their score, and get instant feedback on their answers — all with a clean and responsive UI.",
+      "A modern and interactive Quiz Application built with Next.js and TypeScript. This app allows users to test their knowledge through multiple-choice questions, track their score, and get instant feedback on their answers — all with a clean and responsive UI.",
     features: "Key Features",
     textList: [
       {
@@ -67,7 +67,7 @@ export const projectsData = [
         text: "Responsive design for mobile and desktop",
       },
     ],
-    site: "https://smart-quizapp.netlify.app/",
+    site: "https://quizzforstudents.netlify.app/",
     link: "https://github.com/ArturBaghdanyan/Quizz-app",
   },
   {
