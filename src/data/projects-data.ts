@@ -41,36 +41,6 @@ export const projectsData = [
      link: "https://github.com/ArturBaghdanyan/AuthorsWithBooks_app",
   },
   {
-    id: "Quizz",
-    key: "react",
-    date: "30 Apr, 2026",
-    title: "Quizz App",
-    skill: "Next.js, TypeScript, fake API",
-    description:
-      "A modern and interactive Quiz Application built with Next.js and TypeScript. This app allows users to test their knowledge through multiple-choice questions, track their score, and get instant feedback on their answers — all with a clean and responsive UI.",
-    features: "Key Features",
-    textList: [
-      {
-        text: "Dynamic multiple-choice questions with real-time score tracking",
-      },
-      {
-        text: "Instant answer validation with visual feedback",
-      },
-      {
-        text: "Fully typed components and data models using TypeScript",
-      },
-      {
-        text: "Reusable UI components and modular structure",
-      },
-
-      {
-        text: "Responsive design for mobile and desktop",
-      },
-    ],
-    site: "https://quizzforstudents.netlify.app/",
-    link: "https://github.com/ArturBaghdanyan/Quizz-app",
-  },
-  {
     id: "smart-shippings",
     key: "design",
     date: "24 Jan, 2024",
