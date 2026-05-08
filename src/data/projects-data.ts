@@ -28,17 +28,57 @@ export const projectsData = [
     key: "next",
     date: "Dec, 2025",
     title: "The authors with their books",
-    skill: "HTML, CSS, JavaScript, React JS, Node JS, Express JS, Postgres, REST API",
-    description: "A full-stack web application for managing authors and their books. Built with a React frontend, Node.js/Express REST API backend, and a PostgreSQL database — covering the complete development lifecycle from UI to data persistence.",
+    skill:
+      "HTML, CSS, JavaScript, React JS, Node JS, Express JS, Postgres, REST API",
+    description:
+      "A full-stack web application for managing authors and their books. Built with a React frontend, Node.js/Express REST API backend, and a PostgreSQL database — covering the complete development lifecycle from UI to data persistence.",
     features: "Key Features",
-     textList: [
+    textList: [
       { text: "Browse and search authors alongside their published books" },
-      { text: "Full CRUD operations — create, read, update, and delete authors and books" },
-      { text: "RESTful API built with Express JS for clean, structured data communication" },
-      { text: "PostgreSQL database with relational data modeling between authors and books" },
-      { text: "Responsive UI built with React for a smooth experience on any device" },
+      {
+        text: "Full CRUD operations — create, read, update, and delete authors and books",
+      },
+      {
+        text: "RESTful API built with Express JS for clean, structured data communication",
+      },
+      {
+        text: "PostgreSQL database with relational data modeling between authors and books",
+      },
+      {
+        text: "Responsive UI built with React for a smooth experience on any device",
+      },
     ],
-     link: "https://github.com/ArturBaghdanyan/AuthorsWithBooks_app",
+    link: "https://github.com/ArturBaghdanyan/AuthorsWithBooks_app",
+  },
+  {
+    id: "Quizz",
+    key: "react",
+    date: "30 Apr, 2026",
+    title: "Quizz App",
+    skill: "Next.js, TypeScript, fake API",
+    description:
+      "A modern and interactive Quiz Application built with Next.js and TypeScript. This app allows users to test their knowledge through multiple-choice questions, track their score, and get instant feedback on their answers — all with a clean and responsive UI.",
+    features: "Key Features",
+    textList: [
+      {
+        text: "Dynamic multiple-choice questions with real-time score tracking",
+      },
+      {
+        text: "Instant answer validation with visual feedback",
+      },
+      {
+        text: "Fully typed components and data models using TypeScript",
+      },
+      {
+        text: "Reusable UI components and modular structure",
+      },
+
+      {
+        text: "Responsive design for mobile and desktop",
+      },
+    ],
+    site: "https://quizzforstudents.netlify.app/",
+    link: "https://github.com/ArturBaghdanyan/Quizz-app",
   },
   {
     id: "smart-shippings",
