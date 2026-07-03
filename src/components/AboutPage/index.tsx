@@ -1,19 +1,19 @@
 import { useRef } from "react";
 
 import Contact from "../Contact";
-// import hi from "../../assets/hi.png";
 
-// import style from "./style.module.scss";
 
 interface AboutPageProps {
   onSkillsClick: () => void;
   onExperienceClick: () => void;
+  onFreelanceClick: () => void;
   onProjectsClick: () => void;
 }
 
 const AboutPage = ({
   onSkillsClick,
   onExperienceClick,
+  onFreelanceClick,
   onProjectsClick,
 }: AboutPageProps) => {
   const textRef = useRef<HTMLDivElement | null>(null);
@@ -26,13 +26,6 @@ const AboutPage = ({
       >
         <div className="flex flex-col gap-y-3 h-full">
           <div className="flex items-center gap-x-1 gap-y-0 w-full md:mx-0 md:text-lg">
-            {/* <img
-              src={hi}
-              alt="hi"
-              width={30}
-              height={30}
-              className={`${style.animateSlideX}`}
-            /> */}
             <p className="pl-5 text-xl sm:text-4xl md:text-3xl font-bold text-white font-montserrat">
               Arthur Baghdanyan
             </p>
@@ -65,11 +58,19 @@ const AboutPage = ({
               <div className="w-12 h-2 border-t-1 mt-3"></div>
             </div>
             <div
+              onClick={onFreelanceClick}
+              className="flex items-center gap-x-6 text-white cursor-pointer hover:text-green-400 transition-colors"
+            >
+              <div className="w-12 h-2 border-t-1 mt-3"></div>
+              <span className="uppercase">Freelance Projects</span>
+              <div className="w-12 h-2 border-t-1 mt-3"></div>
+            </div>
+            <div
               onClick={onProjectsClick}
               className="flex items-center gap-x-6 text-white cursor-pointer hover:text-green-400 transition-colors"
             >
               <div className="w-12 h-2 border-t-1 mt-3"></div>
-              <span className="uppercase">Projects</span>
+              <span className="uppercase">Personal Projects</span>
               <div className="w-12 h-2 border-t-1 mt-3"></div>
             </div>
           </div>

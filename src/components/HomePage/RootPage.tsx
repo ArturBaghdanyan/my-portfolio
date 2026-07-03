@@ -12,7 +12,8 @@ const RootPage = () => {
   const skillsSectionRef = useRef<HTMLDivElement | null>(null);
   const experienceSectionRef = useRef<HTMLDivElement | null>(null);
   const projectsSectionRef = useRef<HTMLDivElement | null>(null);
-
+  const freelanceProjectsSectionRef = useRef<HTMLDivElement | null>(null);
+  
   const scrollTo = (ref: React.RefObject<HTMLDivElement | null>) => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
   };
@@ -29,6 +30,7 @@ const RootPage = () => {
       <AboutPage
         onSkillsClick={() => scrollTo(skillsSectionRef)}
         onExperienceClick={() => scrollTo(experienceSectionRef)}
+        onFreelanceClick={() => scrollTo(freelanceProjectsSectionRef)}
         onProjectsClick={() => scrollTo(projectsSectionRef)}
       />
       <MainPage
@@ -36,6 +38,7 @@ const RootPage = () => {
         skillsSectionRef={skillsSectionRef}
         experienceSectionRef={experienceSectionRef}
         projectsSectionRef={projectsSectionRef}
+        freelanceProjectsSectionRef={freelanceProjectsSectionRef}
       />
     </div>
   );

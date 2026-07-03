@@ -4,6 +4,7 @@ export interface IProject {
   key: string;
   date?: string;
   title: string;
+  role?: string;
   skill: string;
   description: string;
   features?: string;

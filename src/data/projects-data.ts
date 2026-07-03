@@ -7,7 +7,8 @@ export const projectsData = [
     image: JobBoard,
     date: "10 Jan, 2026",
     title: "Job Board Platform",
-    skill: "React, TypeScript, Redux Toolkit, RTK Query, React Router",
+    skill:
+      "React, TypeScript, RTK Query, React Router, Unit test, Vitest, React Testing Library",
     description:
       "A full-featured Job Board platform built with React and TypeScript. The application allows users to browse job listings, view detailed job descriptions, save jobs, and apply for positions. Authentication-based access ensures personalized user experience and secure data handling.",
     features: "Key Features",
@@ -15,10 +16,16 @@ export const projectsData = [
       { text: "Browse and search job listings with dynamic filtering" },
       { text: "Job details pages with full descriptions and requirements" },
       { text: "Save and apply to jobs with authenticated user access" },
-      { text: "State management using Redux Toolkit and RTK Query" },
+      { text: "State management using RTK Query" },
       { text: "Protected routes and auth guards with React Router" },
       { text: "Reusable components and scalable project architecture" },
       { text: "Responsive UI optimized for mobile and desktop" },
+      {
+        text: "Robust code quality with Vitest and unit testing for critical business logic",
+      },
+      {
+        text: "Ensured application reliability and stability through comprehensive test coverage",
+      },
     ],
     site: "https://your-dream-job.netlify.app",
     link: "https://github.com/ArturBaghdanyan/JobBoard",
@@ -80,25 +87,7 @@ export const projectsData = [
     site: "https://quizzforstudents.netlify.app/",
     link: "https://github.com/ArturBaghdanyan/Quizz-app",
   },
-  {
-    id: "smart-shippings",
-    key: "design",
-    date: "24 Jan, 2024",
-    title: "Smart Shippings",
-    skill: "HTML, CSS, Bootstrap, Swiper.js, JavaScript, jQuery",
-    description:
-      "Developed a modern and interactive web application using HTML, CSS, Bootstrap, Swiper.js, JavaScript, and jQuery. The project consists of multiple pages, all linked, ensuring smooth navigation between them.",
-    features: "Key Features",
-    textList: [
-      { text: "Multi-page website with structured navigation" },
-      { text: "Responsive layout built with Bootstrap grid system" },
-      { text: "Interactive sliders implemented using Swiper.js" },
-      { text: "DOM manipulation and UI interactions with jQuery" },
-      { text: "Cross-browser compatible and mobile-friendly design" },
-    ],
-    site: "https://iridescent-puffpuff-812571.netlify.app/",
-    link: "https://github.com/ArturBaghdanyan/Smart-Shippings",
-  },
+
   {
     id: "data-vue",
     key: "vue",
@@ -134,23 +123,5 @@ export const projectsData = [
     site: "https://crudvuex.netlify.app",
     link: "https://github.com/ArturBaghdanyan/Crud_Vuex",
   },
-  {
-    id: "garant",
-    key: "design",
-    date: "25 March, 2024",
-    title: "Garant",
-    skill: "HTML, CSS, SCSS, JavaScript",
-    description:
-      "Collaborating closely with UI/UX designers, I've brought their vision to life by creating a responsive web design using HTML, CSS, SCSS, and JavaScript.Fully optimized for smaller screens, ensuring a seamless browsing experience across devices.",
-    features: "Key Features",
-    textList: [
-      { text: "Pixel-perfect implementation from UI/UX designs" },
-      { text: "Responsive layouts using CSS and SCSS" },
-      { text: "Cross-device compatibility and mobile optimization" },
-      { text: "Clean and maintainable stylesheet structure" },
-      { text: "Performance-optimized static website" },
-    ],
 
-    link: "https://github.com/ArturBaghdanyan/garant_logistics",
-  },
 ];

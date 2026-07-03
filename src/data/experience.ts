@@ -31,12 +31,19 @@ export const experienceData = [
     ],
   },
   {
-    dateRange: "2023-10 - 2024-11",
+    dateRange: "2023-01 - 2023-09",
     jobTitle: "Front End developer",
     company: "Circus Codes",
     description: [
-      "Solved the productivity problem for a CRM team by building a fully functional To-do list module — users could create, assign, update, and delete tasks without leaving the platform, reducing context switching between tools.",
-      "Managed server-state complexity across the CRM using RTK Query implemented tag-based cache invalidation so that mutations (create/read/update/delete) automatically triggered UI refreshes without manual re-fetching logic.",
+      "Developed high-performance landing pages and admin dashboards using React.js. Built reusable component libraries with Tailwind CSS to streamline UI development. Optimized state management via Context API and RESTful services.",
+    ],
+  },
+  {
+    dateRange: "2022-07 - 2023-01",
+    jobTitle: "Markup Specialist",
+    company: "IU Networks llc",
+    description: [
+      "Developed custom PDF templates using HTML, CSS, and JavaScript. for generating dynamic and visually appealing PDF documents. Implemented complex layout designs, typography, and styling to ensure professional-looking PDF outputs",
     ],
   },
 ];

@@ -16,7 +16,7 @@ import {
   SiNextdotjs,
   SiExpress,
   SiPostgresql,
-  SiNestjs, 
+  SiNestjs,
   SiMongodb,
 } from "react-icons/si";
 
@@ -40,4 +40,6 @@ export const listSkills: Skill[] = [
   { id: 15, imgSrc: SiMongodb, text: "MongoDB" },
   { id: 16, imgSrc: FaGithubSquare, text: "Git" },
   { id: 17, imgSrc: FaFigma, text: "Figma" },
+  { id: 18, imgSrc: FaFigma, text: "Unit test" },
+  { id: 19, imgSrc: FaFigma, text: "Vitest" },
 ];

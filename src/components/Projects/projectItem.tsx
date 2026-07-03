@@ -1,4 +1,3 @@
-// import { Link } from "react-router-dom";
 import { useState } from "react";
 import type { IProject } from "../../types/project-type";
 
@@ -20,6 +19,10 @@ export const ProjectItem = ({ data }: ProjectProps) => {
       >
         <h2 className="text-2xl font-bold mb-2 text-center text-white">
           {data.title}
+        </h2>
+
+        <h2 className="text-xl font-semibold text-center text-blue-300">
+          {data?.role}
         </h2>
 
         <p className="text-blue-50 m-0 leading-relaxed opacity-90">
