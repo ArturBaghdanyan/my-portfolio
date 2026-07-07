@@ -31,6 +31,42 @@ export const projectsData = [
     link: "https://github.com/ArturBaghdanyan/JobBoard",
   },
   {
+    id: "nexus-ai",
+    key: "next",
+    image: JobBoard,
+    date: "07 July, 2026",
+    title: "Nexus AI",
+    skill: "Next.js, TypeScript, NestJS, next-intl, Docker, Groq (LLM API)",
+    description:
+      "A full-stack AI-powered code review platform. Users can paste a GitHub repository link or submit code snippets directly, and the app analyzes them with AI to surface potential bugs, performance issues, and code quality concerns — making code review faster and easier for developers.",
+    features: "Key Features",
+    textList: [
+      {
+        text: "AI-driven code analysis to detect bugs, performance issues, and quality concerns",
+      },
+      {
+        text: "Accepts GitHub repository links or direct code snippets for review",
+      },
+      {
+        text: "Multilingual interface built with Next.js App Router and next-intl",
+      },
+      {
+        text: "Decoupled architecture — Next.js frontend and NestJS backend API",
+      },
+      {
+        text: "Backend integrates with an LLM API (Groq) to generate AI-powered code reviews",
+      },
+      {
+        text: "Dockerized setup for easy local development and deployment",
+      },
+      {
+        text: "Responsive, clean UI for reviewing analysis results",
+      },
+    ],
+    site: "",
+    link: "https://github.com/ArturBaghdanyan/Nexus-AI",
+  },
+  {
     id: "authors",
     key: "next",
     date: "Dec, 2025",
@@ -123,5 +159,4 @@ export const projectsData = [
     site: "https://crudvuex.netlify.app",
     link: "https://github.com/ArturBaghdanyan/Crud_Vuex",
   },
-
 ];
