@@ -36,7 +36,7 @@ export const projectsData = [
     image: JobBoard,
     date: "07 July, 2026",
     title: "Nexus AI",
-    skill: "Next.js, TypeScript, NestJS, next-intl, Docker, Groq (LLM API)",
+    skill: "Next.js, TypeScript, Tailwind CSS, next-intl, Groq (LLM API)",
     description:
       "A full-stack AI-powered code review platform. Users can paste a GitHub repository link or submit code snippets directly, and the app analyzes them with AI to surface potential bugs, performance issues, and code quality concerns — making code review faster and easier for developers.",
     features: "Key Features",
@@ -51,13 +51,10 @@ export const projectsData = [
         text: "Multilingual interface built with Next.js App Router and next-intl",
       },
       {
-        text: "Decoupled architecture — Next.js frontend and NestJS backend API",
+        text: "Decoupled architecture — Next.js frontend and GROQ API",
       },
       {
-        text: "Backend integrates with an LLM API (Groq) to generate AI-powered code reviews",
-      },
-      {
-        text: "Dockerized setup for easy local development and deployment",
+        text: "Integrates with an LLM API (Groq) to generate AI-powered code reviews",
       },
       {
         text: "Responsive, clean UI for reviewing analysis results",
