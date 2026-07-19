@@ -60,7 +60,7 @@ export const projectsData = [
         text: "Responsive, clean UI for reviewing analysis results",
       },
     ],
-    site: "https://nexus-ai-review.netlify.app",
+    site: "https://nexus-review.netlify.app",
     link: "https://github.com/ArturBaghdanyan/Nexus-AI",
   },
   {
