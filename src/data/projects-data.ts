@@ -8,9 +8,9 @@ export const projectsData = [
     date: "10 Jan, 2026",
     title: "Job Board Platform",
     skill:
-      "React, TypeScript, RTK Query, React Router, Unit test, Vitest, React Testing Library",
+      "React, TypeScript, RTK Query, React Router, Docker, Bash Scripting, GitHub Actions, CI/CD, Vitest, Testing Library",
     description:
-      "A full-featured Job Board platform built with React and TypeScript. The application allows users to browse job listings, view detailed job descriptions, save jobs, and apply for positions. Authentication-based access ensures personalized user experience and secure data handling.",
+      "A full-featured Job Board platform built with React and TypeScript. The application allows users to browse job listings, view detailed job descriptions, save jobs, and apply for positions. Containerized with Docker, automated with custom Bash scripts, and integrated with a robust CI/CD pipeline for seamless testing and deployment.",
     features: "Key Features",
     textList: [
       { text: "Browse and search job listings with dynamic filtering" },
@@ -24,7 +24,13 @@ export const projectsData = [
         text: "Robust code quality with Vitest and unit testing for critical business logic",
       },
       {
-        text: "Ensured application reliability and stability through comprehensive test coverage",
+        text: "Containerized application deployment using Docker and Nginx",
+      },
+      {
+        text: "Automated workflows and environment management via Bash scripting",
+      },
+      {
+        text: "Implemented a fully automated CI/CD pipeline using GitHub Actions for automated linting, testing, building, and deployment checks",
       },
     ],
     site: "https://your-dream-job.netlify.app",
