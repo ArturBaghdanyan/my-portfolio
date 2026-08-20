@@ -33,6 +33,45 @@ export const freelanceProjectsData = [
     link: "https://github.com/Aram47/Chess-Game-frontend",
   },
   {
+    id: "Quizz",
+    key: "react",
+    date: "June 05, 2026",
+    title: "Quizz App",
+    skill: "Next.js, TypeScript, Express.js, MongoDB",
+    description:
+      "An interactive Quiz Application created for my students to practice their knowledge, test themselves, receive instant feedback, and track their results.",
+    features: "Key Features",
+    textList: [
+      {
+        text: "Multiple-choice quizzes with dynamic questions",
+      },
+      {
+        text: "Instant answer validation and score tracking",
+      },
+      {
+        text: "Student results and progress tracking",
+      },
+      {
+        text: "REST API built with Express.js",
+      },
+      {
+        text: "MongoDB for storing quizzes, questions, and results",
+      },
+      {
+        text: "TypeScript for type-safe development",
+      },
+      {
+        text: "Responsive and user-friendly interface",
+      },
+      {
+        text: "Reusable and modular React components",
+      },
+    ],
+    site: "https://quiz.webex.am",
+    link: "https://github.com/ArturBaghdanyan/Quizz-app",
+    link2: "https://github.com/ArturBaghdanyan/Quizz-backend",
+  },
+  {
     id: "smart-shippings",
     key: "design",
     date: "24 Jan, 2024",

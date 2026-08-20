@@ -1,5 +1,14 @@
 export const experienceData = [
   {
+    dateRange: "2026-06 - present",
+    jobTitle: "Front-End Instructor",
+    company: "Webex Technologies LLC",
+    description: [
+      "Instructed foundational courses in Front-End development.",
+      "Taught HTML, CSS, JavaScript, React.js, Redux, and RTK Query.",
+    ],
+  },
+  {
     dateRange: "2026-02 - present",
     jobTitle: "Full Stack developer",
     company: "Freelance (contract)",
@@ -11,7 +20,7 @@ export const experienceData = [
   },
   {
     dateRange: "2025-01 - 2026-02",
-    jobTitle: "Front End Trainer",
+    jobTitle: "Front End Instructor",
     company: "Manukyan It school",
     description: [
       "Teach HTML, CSS, and JavaScript fundamentals.",

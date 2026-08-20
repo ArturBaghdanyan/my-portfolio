@@ -10,5 +10,6 @@ export interface IProject {
   features?: string;
   textList?: { text: string }[];
   link?: string;
+  link2?: string;
   site?: string;
 }
